@@ -18,12 +18,7 @@ body {
     font-family: var(--font-base), sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
     color: var(--color-heading);
     font-weight: 500;
 }
@@ -116,7 +111,7 @@ img {
         min-height: 100vh;
         width: var(--sidebar-width);
         background: linear-gradient(rgba(0, 43, 130, 0.988), rgba(0, 43, 130, 0.208)), url(../images/bg-navbar.jpg);
-
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
 
     .navbar-brand img {
