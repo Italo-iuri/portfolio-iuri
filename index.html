@@ -15,10 +15,11 @@
 <body>
 
     <!-- NAVIGATION BAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <span class= "h3 fw-bold">Iuri Fernandes</span>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container flex-lg-column">
+            <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
+                <span class= "h3 fw-bold d-block d-lg-none">Iuri Fernandes</span>
+                <img src="assets/images/myself.jpg" alt="portfolio Author" class="d-none d-lg-block rounded-circle">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,10 +27,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav flex-lg-column text-lg-center">
                         <li><a class="nav-link active" aria-current="page" href="#home">Home</a></li>
                         <li><a class="nav-link active" aria-current="projects" href="#projects">Projects</a></li>
-                        <li><a class="nav-link active" aria-current="work" href="#work">Work</a></li>
+                        <li><a class="nav-link active" aria-current="work" href="#work">Skills</a></li>
                         <li><a class="nav-link active" aria-current="about" href="#about">About</a></li>
                         <li><a class="nav-link active" aria-current="contact" href="#contact">Contact</a></li>                      
                     </ul>
@@ -37,8 +38,74 @@
             </div>
         </div>
     </nav>
-    <!-- NAVIGATION BAR -->
+    <!-- /NAVIGATION BAR -->
+    
+    <!-- CONTENT-->
+   <div id="content-wrapper">
+        <!-- home -->
+        <section id="home" class="full-height px-lg-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h1 class="display-4 fw-bold">I'M A <span class="text-brand">FRONT-END</span> LEARNER FROM BAHIA, BRAZIL</h1>
+                        <p class="lead mt-2 mb-4">Hey, Whats up?! My name is Italo Iuri aka iuri /uddiee/ web-developer lover, always trying to learn more and searching for new challenges.</p>
+                        <a href="#projects" class="btn btn-brand me-3">Explore my projects</a>
+                        <a href="https://wa.me/5577998184796" target="_blank" class="link-custom"> Call: +55 (77) 99818-4796</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /home -->
+        <!-- projects -->
+        <section id="projects" class="full-height px-lg-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">Projects</h6>
+                        <h1>MY PROJECTS</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="projects p-4 bg-base rounded-4 shadow-effect">
+                                <div class="iconbox rounded-4">
+                                    <i class="las la-calculator"></i>
+                                </div>
+                                <h4 class="hover-title mt-4 mb-2" >Calculator</h4>
+                                <p>A simple calculator using Vanilla JS and CSS and HTML</p>
+                                <a href="https://italo-iuri.github.io/Calculator/" target="_blank" class="link-custom">Check it out!</a>
+                            </div>
+                        </div>
 
+                        <div class="col-md-4">
+                            <div class="projects p-4 bg-base rounded-4 shadow-effect">
+                                <div class="iconbox rounded-4">
+                                    <i class="las la-temperature-high"></i>
+                                </div>
+                                <h4 class="hover-title mt-4 mb-2" >Temperature Converter</h4>
+                                <p>A nice way to convert temperature between Celsius and Fahrenheit</p>
+                                <a href="https://italo-iuri.github.io/temperature-converter/" target="_blank" class="link-custom">Check it out!</a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="projects p-4 bg-base rounded-4 shadow-effect">
+                                <div class="iconbox rounded-4">
+                                    <i class="las la-edit"></i>
+                                </div>
+                                <h4 class="hover-title mt-4 mb-2" >To Do List</h4>
+                                <p>A to do list where you can organize and track your chores</p>
+                                <a href="https://italo-iuri.github.io/temperature-converter/" target="_blank" class="link-custom">Check it out!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /projects -->
+
+   </div>
+    <!-- /CONTENT-->
+    
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/main.js"></script>
