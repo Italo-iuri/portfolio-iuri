@@ -61,13 +61,13 @@ img {
     
     line-height: 1.2em;
     color: #0000;
-    text-shadow: 0 0 #fff, 0 1.2em #1095c1;
+    text-shadow: 0 0 #fff, 0 1.2em #fff;
     overflow: hidden;
     transition: .3s;
 }
 
 .hover-title:hover {
-    text-shadow: 0 -1.2em #000, 0 0 var(--color-brand);
+    text-shadow: 0 -1.2em #fff, 0 0 var(--color-brand);
 }
 
 .shadow-effect {
@@ -104,6 +104,10 @@ img {
 .navbar .nav-link:hover {
     color: var(--color-brand);
     transition: 0.9s;
+}
+
+.navbar .nav-link.active{
+    color: var(--color-brand);
 }
 
 @media (min-width: 990px) {
@@ -184,4 +188,18 @@ img {
 
 .link-custom:hover::after {
     width: 100%;
+}
+/* Card Skills */
+
+
+.card-custom .card-custom-image {
+    overflow: hidden;
+}
+
+.card-custom .card-custom-image  img {
+    transition: all .4s ease;
+}
+
+.card-custom:hover .card-custom-image img {
+    transform: scale(1.1);
 }

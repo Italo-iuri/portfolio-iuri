@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
 
     <!-- NAVIGATION BAR -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -30,7 +30,7 @@
                     <ul class="navbar-nav flex-lg-column text-lg-center">
                         <li><a class="nav-link active" aria-current="page" href="#home">Home</a></li>
                         <li><a class="nav-link active" aria-current="projects" href="#projects">Projects</a></li>
-                        <li><a class="nav-link active" aria-current="work" href="#work">Skills</a></li>
+                        <li><a class="nav-link active" aria-current="work" href="#skills">Skills</a></li>
                         <li><a class="nav-link active" aria-current="about" href="#about">About</a></li>
                         <li><a class="nav-link active" aria-current="contact" href="#contact">Contact</a></li>                      
                     </ul>
@@ -46,11 +46,13 @@
         <section id="home" class="full-height px-lg-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8">
-                        <h1 class="display-4 fw-bold">I'M A <span class="text-brand">FRONT-END</span> LEARNER FROM BAHIA, BRAZIL</h1>
-                        <p class="lead mt-2 mb-4">Hey, Whats up?! My name is Italo Iuri aka iuri /uddiee/ web-developer lover, always trying to learn more and searching for new challenges.</p>
-                        <a href="#projects" class="btn btn-brand me-3">Explore my projects</a>
-                        <a href="https://wa.me/5577998184796" target="_blank" class="link-custom"> Call: +55 (77) 99818-4796</a>
+                    <div class="col-lg-10">
+                        <h1 class="display-5 fw-bold" data-aos="fade-up">HEY, I'M A <span class="text-brand">FRONT-END</span> LEARNER FROM BAHIA, BRAZIL</h1>
+                        <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="200">Whats up?! My name is Italo Iuri aka iuri /uddiee/ web-developer lover, always trying to learn more and searching for new challenges.</p>
+                        <div data-aos="fade-up" data-aos-delay="400">
+                            <a href="#projects" class="btn btn-brand me-3">Explore my projects</a>
+                            <a href="https://wa.me/5577998184796" target="_blank" class="link-custom"> Call: +55 (77) 99818-4796</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -60,12 +62,13 @@
         <section id="projects" class="full-height px-lg-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-lg-8" data-aos="fade-up">
                         <h6 class="text-brand">Projects</h6>
-                        <h1>MY PROJECTS</h1>
+                        <h1 data-aos="fade-up" class="mb-5">MY PROJECTS</h1>
                     </div>
-                    <div class="row">
-                        <div class="col-md-4">
+                    <!-- Calculator -->
+                    <div class="row"> 
+                        <div class="col-md-4" data-aos="fade-up">
                             <div class="projects p-4 bg-base rounded-4 shadow-effect mb-4">
                                 <div class="iconbox rounded-4">
                                     <i class="las la-calculator"></i>
@@ -75,8 +78,9 @@
                                 <a href="https://italo-iuri.github.io/Calculator/" target="_blank" class="link-custom">Check it out!</a>
                             </div>
                         </div>
-
-                        <div class="col-md-4">
+                        <!--/Calculator -->
+                        <!-- Temperature Converter -->
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                             <div class="projects p-4 bg-base rounded-4 shadow-effect mb-4">
                                 <div class="iconbox rounded-4">
                                     <i class="las la-temperature-high"></i>
@@ -86,8 +90,10 @@
                                 <a href="https://italo-iuri.github.io/temperature-converter/" target="_blank" class="link-custom">Check it out!</a>
                             </div>
                         </div>
+                        <!-- /Temperature Converter -->
 
-                        <div class="col-md-4">
+                        <!-- Todo List -->
+                        <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
                             <div class="projects p-4 bg-base rounded-4 shadow-effect mb-4">
                                 <div class="iconbox rounded-4">
                                     <i class="las la-edit"></i>
@@ -97,11 +103,149 @@
                                 <a href="https://italo-iuri.github.io/temperature-converter/" target="_blank" class="link-custom">Check it out!</a>
                             </div>
                         </div>
+                        <!-- /Todo List -->
+
                     </div>
                 </div>
             </div>
         </section>
         <!-- /projects -->
+        <!-- skills -->
+        <section id="skills" class="full-height px-lg-5">
+            <div class="container">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <h6 class="text-brand">Skills</h6>
+                    <h1 data-aos="fade-up" class="mb-5">My skill-set</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-3" data-aos="fade-up">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="assets/images/html.jpg" alt="HTML">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>HTML5</h4>
+                                <p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.</p>
+                                <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank" class="link-custom">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="assets/images/css.jpg" alt="HTML">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>CSS3</h4>
+                                <p>It's a style sheet language used for describing the presentation of a web document. CSS is a cornerstone technology of the World Wide Web.</p>
+                                <a href="https://en.wikipedia.org/wiki/CSS#CSS_3" target="_blank" class="link-custom">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="500">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="assets/images/javascript.jpg" alt="HTML">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>JAVASCRIPT</h4>
+                                <p>JavaScript often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web.</p>
+                                <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" class="link-custom">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="700">
+                        <div class="card-custom rounded-4 bg-base shadow-effect">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="assets/images/coming-soon.jpg" alt="HTML">
+                            </div>
+                            <div class="card-custom-content p-4">
+                                <h4>BOOTSTRAP</h4>
+                                <p>Bootstrap is a free and open-source CSS framework directed at responsive, front-end web development.</p>
+                                <a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" target="_blank" class="link-custom">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /skills -->
+        <!-- about -->
+        <section id="about" class="full-height px-lg-5">
+            <div class="container">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <h6 class="text-brand">About me</h6>
+                    <h1 data-aos="fade-up" class="mb-5">Education & Experience</h1>
+                </div>
+
+                <div class="row gy-5">
+                    <div class="col-lg-6">
+                        <h3 class="mb-4" data-aos="fade-up" data-aos-delay="200">Education</h3>
+                        <div class="row gy-4">
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Graduated in English Language and Literature</h4>
+                                    <p class="text-brand mb-2"> Universidade do Estado da Bahia (2013-2017)</p>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="400">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Graduated as an Eletrical Technician</h4>
+                                    <p class="text-brand mb-2"> Centro de Estudos Dimensão - UNINTER (2020-2021)</p>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="500">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Administration Course & High School</h4>
+                                    <p class="text-brand mb-2"> Centro Territorial de Educação Profissional (2009-2013)</p>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="mb-4" data-aos="fade-up" data-aos-delay="200">Experience</h3>
+                        <div class="row gy-4">
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Coordinator and Supervisor</h4>
+                                    <p class="text-brand mb-2"> Rede Intersoft (2018-Current)</p>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="800">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>English Teacher </h4>
+                                    <p class="text-brand mb-2"> Escola Mundo Colorido and Private Classes (2015- 2017)</p>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="900">
+                                <div class="bg-base p-4 rounded-4 shadow-effect">
+                                    <h4>Swimming Supervisor</h4>
+                                    <p class="text-brand mb-2"> Recanto Recreativo (2013-2015)</p>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /about -->
+        <!-- contact -->
+        <section id="#contact" class="full-height px-lg-5">
+                
+        </section>
+        <!-- /contact -->
 
    </div>
     <!-- /CONTENT-->
