@@ -15,5 +15,3 @@ AOS.init({
 
 });
 
-// Send the email with the message from the form
-
