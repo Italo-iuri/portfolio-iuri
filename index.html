@@ -50,9 +50,13 @@
                     <div class="col-lg-10">
                         <h1 class="display-5 fw-bold" data-aos="fade-up">HEY, I'M A <span class="text-brand">FRONT-END</span> LEARNER FROM BAHIA, BRAZIL</h1>
                         <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="200">Whats up?! My name is Italo Iuri aka iuri /uddiee/ web-developer lover, always trying to learn more and searching for new challenges.</p>
-                        <div data-aos="fade-up" data-aos-delay="400">
-                            <a href="#projects" class="btn btn-brand me-3">Explore my projects</a>
-                            <a href="https://wa.me/5577998184796" target="_blank" class="link-custom"> Call: +55 (77) 99818-4796</a>
+                        <div class="d-flex align-items-center">
+                            <div data-aos="fade-up" data-aos-delay="400">
+                                <a href="#projects" class="btn btn-brand me-3">Explore my projects</a>
+                            </div>
+                            <div data-aos="fade-up" data-aos-delay="400">
+                                <a href="https://wa.me/5577998184796" target="_blank" class="link-custom"> Call: +55 (77) 99818-4796</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -293,7 +297,7 @@
 
                     <!-- dashboard -->
                     <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
-                        <div class="upcoming bg-base rounded-4 p-4 mb-4">
+                        <div class="upcoming shadow-effect bg-base rounded-4 p-4 mb-4">
                             <div class="text-brand h4">
                                 <i class="las la-star"></i>
                                 <i class="las la-star"></i>
@@ -325,20 +329,20 @@
                     </div>
 
                     <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
-                        <form action="#" class="row g-lg-3 gy-3">
+                        <form action="https://formsubmit.co/italoiuri321@gmail.com" method="POST" class="row g-lg-3 gy-3">
                             <div class="form-group col-md-6">
-                                <input type="text" class="form-control" placeholder="Enter your name">
+                                <input type="text" name="name" class="form-control" placeholder="Enter your name" required>
                             </div>
                             <div class="form-group col-md-6">
-                                <input type="email" class="form-control" placeholder="Enter your email">
+                                <input id="email" name="email" type="email" class="form-control" placeholder="Enter your email" required>
                             </div>
                             <div class="form-group col-12">
-                                <input type="text" class="form-control" placeholder="Enter your subject">
+                                <input type="text" name="subject" class="form-control" placeholder="Enter your subject" required>
                             </div>
                             <div class="form-group col-12">
-                                <textarea name="" rows="4" class="form-control" placeholder="What's the message? Place it here!"></textarea>
+                                <textarea name="message" rows="4" class="form-control" placeholder="What's the message? Place it here!" required></textarea>
                             </div>
-                            <div class="form-group col-12 d-grid" data-aos="fade-up" data-aos-delay="400">
+                            <div class="form-group col-12 d-grid" data-aos="fade-up" data-aos-delay="350">
                                 <button type="submit" class="btn btn-brand">Contact me</button>
                             </div>
                         </form>
@@ -350,11 +354,11 @@
         <!-- /contact -->
 
         <!-- footer -->
-        <footer class="py-5 px-lg-5">
+        <footer class="py-3 px-lg-5">
             <div class="container">
-                <div class="row gy-4 justify-content-between">
+                <div class="row gy-4 justify-content-between align-content-center">
                     <div class="col-auto">
-                        <p class="mb-0">Copyright&copy;  Italo Iuri F. Ramos, 2022.</p>
+                        <p class="mb-0">&copy; Copyright  Italo Iuri F. Ramos, 2022.</p>
                     </div>
                     <div class="col-auto">
                         <div class="social-icons">
@@ -376,6 +380,8 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/main.js"></script>
+   <script src="https://smtpjs.com/v3/smtp.js"></script>
+   
 </body>
 
 </html>
