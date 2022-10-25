@@ -1,6 +1,6 @@
 # portfolio-iuri
 My portfolio
-# My Portfolio Site => Check it out <a href="https://italo-iuri.github.io/portfolio-iuri/" target=_blank>here</a>
+# My Portfolio Site => Check it out <a href="https://italo-iuri.github.io/portfolio-iuri/" target="_blank">here</a>
 
 
 
